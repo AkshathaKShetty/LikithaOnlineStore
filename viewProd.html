@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div ng-controller="homeController">
+         <button  type="button" ng-click="submit()">Back to home</button>   
+         
+         
+         
+         
+         <div class ="container">
+                        <div class="row">
+                            <!--<div class ="col-sm-4" ng-repeat="product in products" ng-if="set==$index" >-->
+                            <div class ="col-sm-7"> 
+                                <h5 style="background-color:blue;">Specification:</h5>
+                                    <img src={{selprods.imgSrc}} class="img-fluid" width = 400 height = 100 style="float:left;">
+                                    <p> <b>Name :</b> <em>{{selprods.name}}</em> </p>
+                                    <p> <b>Brand:</b> <em>{{selprods.brand}}</em> </p>
+                                    <p> <b>Capacity:</b> <em>{{selprods.capacity}} GB</em> </p>
+                                    <p> <b>Price:</b> <em>{{selprods.Cost}}</em> </p>
+                                    <p> <b>Color:</b> <em>{{selprods.color}}</em> </p>
+                                    <p> <b>Size:</b> <em>{{selprods.screenSize}}</em> </p>
+                                    <p> <b>Model:</b> <em>{{selprods.model}}</em> </p>
+                            
+                            </div>
+                        </div>
+                    </div> 
+         
+        <!--<div  ng-repeat="product in products">
+            <div ng-class="{sel:selIdx==$index}" >
+                            <img src={{product.imgSrc}} class="img-thumbnail" >
+                            <p> Name : <em>{{product.name}}</em> </p>
+                            <p> Brand: <em>{{product.brand}}</em> </p>
+                            <p> Capacity: <em>{{product.capacity}} GB</em> </p>
+                            <p> Cost: <em>{{product.Cost}}</em> </p>
+                            <p> Color: <em>{{product.color}}</em> </p>
+            </div>               
+            
+         </div> -->  
+         
+        </div>
+        
+        
+    </body>
+</html>

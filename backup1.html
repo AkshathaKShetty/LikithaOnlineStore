@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header> Welcome to Online Digital Stores </header>
+       <div ng-controller="homeController"> 
+            <div class="row">
+                <div class="col-sm-2" style="background-color:lavender;">.col-sm-4  Filters</div>
+                <div class="col-sm-10" >
+                    <ul>
+                            <li ng-repeat="product in products">
+                            <img src={{product.imgSrc}} height="100" width="100">
+                            Name : <em>{{product.name}}</em>
+                            Brand: <em>{{product.brand}}</em>
+                            Cost: <em>{{product.cost}}</em>
+                            Color: <em>{{product.color}}</em>
+                            </li>
+                    </ul> 
+                </div>
+            </div>      
+        </div>
+        
+    </body>
+</html>
